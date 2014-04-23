@@ -288,7 +288,8 @@ if ( ! class_exists( 'EDD_Checkout_Referrals' ) ) {
 						'user_nicename' => 'User Nicename',
 						'display_name'	=> 'Display Name',
 						'nickname'		=> 'Nickname'
-					)
+					),
+					'std'	=> 'user_nicename'
 				),
 			);
 
@@ -365,7 +366,7 @@ if ( ! class_exists( 'EDD_Checkout_Referrals' ) ) {
 			$affiliate = isset( $post['edd_affiliate'] ) ? $post['edd_affiliate'] : '';
 
 			if ( ! is_numeric( $affiliate ) && $require_affiliate ) {
-				edd_set_error( 'invalid_affiliate', __( 'Please choose an affiliate to credit', 'edd-checkout-referrals' ) );
+				edd_set_error( 'invalid_affiliate', __( 'Please choose an affiliate', 'edd-checkout-referrals' ) );
 			}
 		}
 		
