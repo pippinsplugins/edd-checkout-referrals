@@ -236,7 +236,7 @@ if ( ! class_exists( 'EDD_Checkout_Referrals' ) ) {
 		 * Modify plugin metalinks
 		 *
 		 * @access      public
-		 * @since       1.0.0
+		 * @since       1.0
 		 * @param       array $links The current links array
 		 * @param       string $file A specific plugin table entry
 		 * @return      array $links The modified links array
@@ -257,6 +257,9 @@ if ( ! class_exists( 'EDD_Checkout_Referrals' ) ) {
 
 		/**
 		 * Settings
+		 * 
+		 * @since  1.0
+		 * @return array $settings
 		 */
 		public function settings( $settings ) {
 
@@ -299,7 +302,9 @@ if ( ! class_exists( 'EDD_Checkout_Referrals' ) ) {
 
 		/**
 		 * Load scripts
-		 * @return [type] [description]
+		 * 
+		 * @return void
+		 * @since  1.0
 		 */
 		public function scripts() {
 			$js_dir  = EDD_PLUGIN_URL . 'assets/js/';
@@ -317,6 +322,7 @@ if ( ! class_exists( 'EDD_Checkout_Referrals' ) ) {
 		/**
 		 * JS for admin page to allow options to be visible
 		 *
+		 * @return  void
 		 * @since 1.0
 		*/
 		function footer_js() { 
@@ -352,9 +358,10 @@ if ( ! class_exists( 'EDD_Checkout_Referrals' ) ) {
 		
 		/**
 		 * Check that an affiliate has been selected
-		 * @param  [type] $valid_data [description]
-		 * @param  [type] $post       [description]
-		 * @return [type]             [description]
+		 * @param  array $valid_data valid data
+		 * @param  array $post posted data
+		 * @return void
+		 * @since  1.0
 		 */
 		public function check_affiliate_field( $valid_data, $post ) {
 			
@@ -373,6 +380,7 @@ if ( ! class_exists( 'EDD_Checkout_Referrals' ) ) {
 		/**
 		 * List affiliates in dropdown at checkout
 		 *
+		 * @return  void
 		 * @since  1.0
 		 */
 		public function list_affiliates() {
@@ -413,6 +421,10 @@ if ( ! class_exists( 'EDD_Checkout_Referrals' ) ) {
 	
 		/**
 		 * Increase affiliate's referral count on completed purchase
+		 *
+		 * @param int $payment_id Payment ID
+		 * @return  void
+		 * @since  1.0
 		 */
 		public function create_referral( $payment_id ) {
 
