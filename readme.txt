@@ -1,16 +1,19 @@
 === EDD Checkout Referrals ===
 Contributors: sumobi
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EFUPMPEZPGW7L
-Tags: easy digital downloads, digital downloads, e-downloads, edd, sumobi, purchase, e-commerce
+Tags: easy digital downloads, digital downloads, e-downloads, edd, sumobi, purchase, e-commerce, affiliateWP
 Requires at least: 3.3
 Tested up to: 3.9
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Allows a customer to select an affiliate at checkout to receive commission on their purchase
+Allows a customer to select an affiliate at checkout to receive commission from their purchase
 
 == Description ==
+
+This plugin requires both [AffiliateWP](http://affiliatewp.com/ "AffiliateWP") & [Easy Digital Downloads](http://wordpress.org/extend/plugins/easy-digital-downloads/ "Easy Digital Downloads"). <strong>It will NOT function without them.</strong>
+
 
 Use case:
 Perfect use case is when your affiliates are setup as NPO (Nonprofit organizations). A customer can select the NPO from checkout, and that NPO will receive a commission on the sale. If a site visitor is already using an affiliate url (/ref=123), the select menu is not shown at checkout.
