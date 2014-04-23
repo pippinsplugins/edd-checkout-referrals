@@ -2,7 +2,7 @@
 /*
 Plugin Name: Easy Digital Downloads - Checkout Referrals
 Plugin URI: http://affiliatewp.com
-Description: Allows a customer to credit the referral to a specific affiliate
+Description: Allows a customer to select an affiliate at checkout to receive commission on their purchase
 Version: 1.0
 Author: Andrew Munro, Sumobi
 Author URI: http://sumobi.com/

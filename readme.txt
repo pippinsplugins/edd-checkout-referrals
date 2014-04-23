@@ -8,7 +8,7 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Allows a customer to credit the referral to a specific affiliate
+Allows a customer to select an affiliate at checkout to receive commission on their purchase
 
 == Description ==
 
