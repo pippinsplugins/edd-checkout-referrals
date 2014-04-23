@@ -348,12 +348,9 @@ if ( ! class_exists( 'EDD_Checkout_Referrals' ) ) {
 		 * @since  1.0
 		 */
 		public function already_tracking_referral() {
-			$affwp_ref = isset( $_COOKIE['affwp_ref'] ) ? $_COOKIE['affwp_ref'] : '';
+			
+			return affiliate_wp()->tracking->was_referred();
 
-			if ( $affwp_ref )
-				return (bool) true;
-
-			return (bool) false;
 		}
 		
 		/**
